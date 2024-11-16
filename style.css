@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+body{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -15,47 +15,53 @@ body {
     background-color: #f2f2f2;
 }
 
-.container {
-    width: 90vw;
-    max-width: 600px;
-    padding: 1rem;
+.container{
     background-color: #fff;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1{
     text-align: center;
+    font-weight: 500;
 }
 
-.board {
-    width: 100%;
-    aspect-ratio: 1; /* Ensure the chessboard remains square */
-    margin: 1rem auto;
-    background-color: #ececec;
+.board{
+    width: 400px;
+    margin: 20px auto;
 }
 
-.buttons button {
-    width: 100%;
-    padding: 0.8rem;
-    font-size: 1rem;
-    margin-top: 1rem;
-    background-color: #007bff;
-    color: white;
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button{
+    color: #fff;
+    background-color: #000;
     border: none;
-    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 0.9rem;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.buttons button:hover {
-    background-color: #0056b3;
+button:hover{
+    background-color: #434343;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        width: 95vw;
-    }
-
-    .buttons button {
-        padding: 0.6rem;
-        font-size: 0.9rem;
-    }
+.move-history{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100px;
+    width: 400px;
+    overflow-y: scroll;
+    background-color: #f2f2f2;
 }
